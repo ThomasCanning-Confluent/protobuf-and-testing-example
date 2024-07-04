@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = "../Scores;main";
+
+message Match {
+  string actualScore = 1;
+  map<string, string> predictions = 2;
+}
